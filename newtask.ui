@@ -99,7 +99,7 @@
     <bool>false</bool>
    </property>
    <property name="placeholderText">
-    <string>1~519</string>
+    <string>1~400</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="taskNameLineEdit">
@@ -140,7 +140,7 @@
     <bool>false</bool>
    </property>
    <property name="placeholderText">
-    <string>1~519</string>
+    <string>1~400</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">

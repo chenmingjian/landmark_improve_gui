@@ -66,7 +66,7 @@ RESOURCES += \
 
 RC_ICONS = logo.ico
 
-INCLUDEPATH += D:\Program_Files\opencv\build-sources-Desktop_Qt_5_12_0_MinGW_64_bit-Release\install\include
+INCLUDEPATH += D:\Program_Files\opencv4.1.1\build\include
 
-LIBS += D:\Program_Files\opencv\build-sources-Desktop_Qt_5_12_0_MinGW_64_bit-Release\install\x64\mingw\lib/libopencv_*
+LIBS += D:\Program_Files\opencv4.1.1\build\x64\vc15\lib\opencv_world411.lib
 

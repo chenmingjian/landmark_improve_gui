@@ -18,6 +18,8 @@
 #include <QInputDialog>
 #define chendebug qDebug()<<"[FILE:"<<__FILE__<<",LINE"<<__LINE__<<",FUNC"<<__FUNCTION__<<"]"
 
+#pragma execution_character_set("utf-8")
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)

@@ -1,4 +1,4 @@
-#ifndef PIXANDCV_H
+﻿#ifndef PIXANDCV_H
 #define PIXANDCV_H
 
 #include <QDebug>

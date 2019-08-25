@@ -1,4 +1,4 @@
-#include "newtask.h"
+﻿#include "newtask.h"
 #include "ui_newtask.h"
 #include "tool.h"
 #include <QFileDialog>
@@ -6,6 +6,7 @@
 #include <QRegExpValidator>
 #include <QDebug>
 #define chendebug qDebug()<<"[FILE:"<<__FILE__<<",LINE"<<__LINE__<<",FUNC"<<__FUNCTION__<<"]"
+#pragma execution_character_set("utf-8")
 
 NewTask::NewTask(QWidget *parent) :
     QDialog(parent),

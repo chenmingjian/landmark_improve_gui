@@ -1,4 +1,4 @@
-#include "opentask.h"
+﻿#include "opentask.h"
 #include "ui_opentask.h"
 
 #include <QFile>
@@ -8,7 +8,7 @@
 #include "tool.h"
 #define chendebug qDebug()<<"[FILE:"<<__FILE__<<",LINE"<<__LINE__<<",FUNC"<<__FUNCTION__<<"]"
 
-
+#pragma execution_character_set("utf-8")
 OpenTask::OpenTask(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::openTask)

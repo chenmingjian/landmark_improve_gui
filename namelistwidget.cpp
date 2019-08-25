@@ -1,4 +1,4 @@
-#include "namelistwidget.h"
+﻿#include "namelistwidget.h"
 #include "selectitem.h"
 
 #include <QStringListModel>
@@ -7,6 +7,7 @@
 #include <QEvent>
 #include <QtCore>
 #define chendebug qDebug()<<"[FILE:"<<__FILE__<<",LINE"<<__LINE__<<",FUNC"<<__FUNCTION__<<"]"
+#pragma execution_character_set("utf-8")
 
 NameListWidget::NameListWidget(QWidget*)
 {
@@ -16,7 +17,7 @@ NameListWidget::NameListWidget(QWidget*)
 
 void NameListWidget::setUi()
 {
-    QStringList strList({"1.  G'  ","2.  N'  ","3.  Prn ","4.  Sn  ","5.  Ls  ","6.  St  ","7.  Li  ","8.  Si  ","9.  Pog'","10. Gn' ","11. Me' ","12. N   ","13. Or  ","14. ANS ","15. A   ","16. UIA ","17. SPr ","18. UI  ","19. LI  ","20. Id  ","21. LIA ","22. B   ","23. Pog ","24. Gn  ","25. Me  ","26. U6  ","27. L6  ","28. Go  ","29. PNS ","30. Ptm ","31. Ar  ","32. Co  ","33. S   ","34. Ba  ","35. P   "});
+    QStringList strList({"1.  G'  ","2.  N'  ","3.  Prn ","4.  Sn  ","5.  Ls  ","6.  St  ","7.  Li  ","8.  Si  ","9.  Pog'","10. Gn' ","11. Me' ","12. N   ","13. Or  ","14. ANS ","15. A   ","16. UIA ","17. SPr ","18. UI  ","19. LI  ","20. Id  ","21. LIA ","22. B   ","23. Pog ","24. Gn  ","25. Me  ","26. U6  ","27. L6  ","28. Go  ","29. PNS ","30. Ptm ","31. Ar  ","32. Co  ","33. S   ","34. Ba  ","35. P   ","36. ruler0", "37. ruler1"});
     QFont font("Consolas");
     for(auto str:strList)
     {

@@ -1,4 +1,4 @@
-#include "imglabel.h"
+﻿#include "imglabel.h"
 #include "tool.h"
 #include "pixandcv.h"
 #include <QPainter>
@@ -10,7 +10,7 @@
 
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
-
+#pragma execution_character_set("utf-8")
 
 //#define chendebug qDebug()<<"[FILE:"<<__FILE__<<",LINE"<<__LINE__<<",FUNC"<<__FUNCTpION__<<"]"
 
@@ -58,7 +58,7 @@ QPixmap ImgLabel::drawRedDot(QPixmap &pixmap, double scale)
 
 QPixmap ImgLabel::drawMaybeLabel(QPixmap &pixmap, double scale)
 {
-    QVector<QString>nameMap = {"G'", "N'", "Prn", "Sn", "Ls", "St", "Li", "Si", "Pog'", "Gn'", "Me'", "N", "Or", "ANS", "A", "UIA", "SPr", "UI", "LI", "Id", "LIA", "B", "Pog", "Gn", "Me", "U6", "L6", "Go", "PNS", "Ptm", "Ar", "Co", "S", "Ba", "P"};
+    QVector<QString>nameMap = {"G'", "N'", "Prn", "Sn", "Ls", "St", "Li", "Si", "Pog'", "Gn'", "Me'", "N", "Or", "ANS", "A", "UIA", "SPr", "UI", "LI", "Id", "LIA", "B", "Pog", "Gn", "Me", "U6", "L6", "Go", "PNS", "Ptm", "Ar", "Co", "S", "Ba", "P", "ruler 0", "ruler 1"};
 
     QPainter painter(&pixmap);
     QPen rPen(Qt::red);
@@ -70,7 +70,7 @@ QPixmap ImgLabel::drawMaybeLabel(QPixmap &pixmap, double scale)
     font.setLetterSpacing(QFont::AbsoluteSpacing, 0);
     painter.setFont(font);
     int i =-1;
-    if (realLabel.size() !=35)
+    if (realLabel.size() !=37)
     {
         realLabel = maybeLabel;
 
@@ -528,9 +528,9 @@ void ImgLabel::loadTouchedIndex(QFile &f)
 
 void ImgLabel::loadTouchedIndex()
 {
-    if(realLabel.size() == 35)
+    if(realLabel.size() == 37)
     {
-        for(int i = 0; i != 35; ++i)
+        for(int i = 0; i != 37; ++i)
         {
             changed(i);
         }
